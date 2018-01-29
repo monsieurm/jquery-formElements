@@ -223,7 +223,6 @@ body{
     @include size(100%, auto);
     margin: 0 0 25px;
     position: relative;
-    @include placeholder(lighten(#454545, 25%));
 
     .form-element-label{
         display: block;
@@ -236,6 +235,7 @@ body{
     input[type="submit"] {
         @include size(100%, $fe_lineheight);
         border-radius: 2px;
+        @include placeholder(lighten(#454545, 25%));
         color: #454545;
         display: block;
         border: 1px solid $fe_border;
@@ -265,6 +265,7 @@ body{
     textarea{
         border: 1px solid $fe_border;
         border-radius: 2px;
+        @include placeholder(lighten(#454545, 25%));
         height: 110px;
         width: 100%;
         padding: 6px 12px;
