@@ -21,11 +21,13 @@
         if($dropdown.parent('.form-element').length == 1){
             var activeVal = $dropdown.find('option:selected').text();
             var options = '';
+            var classes = $dropdown.attr('class');
+            
             $dropdown.find('option').each(function(i,e){
                 options += '<li>'+$(e).text()+'</li>';
             });
 
-            var newDropdown = $('<div class="form-element-dropdown">'+
+            var newDropdown = $('<div class="'+classes+'">'+
             '<a href="#">'+activeVal+'</a>'+
             '<ul data-max-items="'+this.settings.maxItems+'">'+options+'</ul>'+
             '</div>');
