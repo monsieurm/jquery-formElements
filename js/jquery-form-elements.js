@@ -27,7 +27,7 @@
                 options += '<li>'+$(e).text()+'</li>';
             });
 
-            var newDropdown = $('<div class="'+classes+'">'+
+            var newDropdown = $('<div class="form-element-dropdown '+classes+'">'+
             '<a href="#">'+activeVal+'</a>'+
             '<ul data-max-items="'+this.settings.maxItems+'">'+options+'</ul>'+
             '</div>');
